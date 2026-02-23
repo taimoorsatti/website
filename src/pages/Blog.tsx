@@ -52,7 +52,7 @@ export default function Blog() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-6 left-6 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                <div className="absolute top-6 left-6 bg-accent text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
                   {post.category}
                 </div>
               </div>
@@ -64,13 +64,13 @@ export default function Blog() {
                   <User size={16} /> {post.author}
                 </div>
               </div>
-              <h2 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-primary transition-colors">
+              <h2 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-accent transition-colors">
                 {post.title}
               </h2>
               <p className="text-slate-600 mb-6 line-clamp-2 leading-relaxed">
                 {post.excerpt}
               </p>
-              <span className="text-primary font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+              <span className="text-accent font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
                 Read Article <ArrowRight size={18} />
               </span>
             </article>
@@ -89,9 +89,9 @@ export default function Blog() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-6 py-4 rounded-full bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 w-full sm:w-80"
+              className="px-6 py-4 rounded-full bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/20 w-full sm:w-80"
             />
-            <button className="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-secondary transition-all whitespace-nowrap">
+            <button className="bg-accent text-primary px-8 py-4 rounded-full font-bold hover:brightness-110 transition-all whitespace-nowrap">
               Subscribe Now
             </button>
           </div>

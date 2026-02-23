@@ -8,37 +8,37 @@ const services = [
     title: 'Mobile App Development',
     desc: 'Cutting-edge iOS and Android applications built for performance and scale.',
     icon: Smartphone,
-    color: 'bg-blue-500',
+    color: 'bg-secondary',
   },
   {
     title: 'Web Development',
     desc: 'Enterprise-grade web platforms with modern architectures and seamless UX.',
     icon: Globe,
-    color: 'bg-indigo-500',
+    color: 'bg-slate-700',
   },
   {
     title: 'Data Analytics',
     desc: 'Transforming raw data into actionable business intelligence and insights.',
     icon: BarChart3,
-    color: 'bg-cyan-500',
+    color: 'bg-accent',
   },
   {
     title: 'UI/UX Design',
     desc: 'User-centric design that drives engagement and simplifies complex workflows.',
     icon: Cpu,
-    color: 'bg-violet-500',
+    color: 'bg-primary',
   },
   {
     title: 'API Integration',
     desc: 'Seamlessly connecting your ecosystem with robust and secure API solutions.',
     icon: Code,
-    color: 'bg-emerald-500',
+    color: 'bg-teal-600',
   },
   {
     title: 'Custom Software',
     desc: 'Tailored software solutions designed to solve your unique business challenges.',
     icon: Database,
-    color: 'bg-blue-600',
+    color: 'bg-slate-800',
   },
 ];
 
@@ -53,36 +53,46 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20">
+      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072"
-            alt="Technology background"
-            className="w-full h-full object-cover opacity-10"
+          <motion.img
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070"
+            alt="Professional IT Team Working"
+            className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white via-white/90 to-white"></div>
+          <div className="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/80"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
             >
-              <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-[1.1] mb-6">
-                Empowering <span className="text-primary">Corporate</span> Digital Transformation
+              <h1 className="text-5xl md:text-8xl font-bold text-white leading-[1.05] mb-8 tracking-tight">
+                Premium <span className="text-accent">IT Solutions</span> for Global Enterprises
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl">
-                Maple Business & IT Solutions LLC delivers premium software development, data analytics, and IT consulting services to enterprises across the United States.
+              <p className="text-xl md:text-2xl text-slate-200 leading-relaxed mb-12 max-w-2xl font-light tracking-wide">
+                Maple Business & IT Solutions LLC delivers high-impact software engineering, AI-driven analytics, and strategic consulting to U.S. businesses and government entities.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-6">
                 <Link
                   to="/contact"
-                  className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-secondary transition-all shadow-xl shadow-primary/30 flex items-center justify-center gap-2"
+                  className="bg-accent text-primary px-10 py-5 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-2xl shadow-accent/20 flex items-center justify-center gap-2 group"
                 >
-                  Get a Quote <ArrowRight size={20} />
+                  Start Your Project <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  to="/services"
+                  className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center"
+                >
+                  Explore Services
                 </Link>
               </div>
             </motion.div>
@@ -90,15 +100,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Badges */}
-      <section className="py-12 border-y border-slate-100 bg-slate-50/50">
+      {/* Compliance & Trust Section */}
+      <section className="py-12 bg-slate-50 border-b border-slate-100">
         <div className="container mx-auto px-6">
-          <p className="text-center text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-8">Trusted by Global Enterprises</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all">
-            <div className="flex items-center gap-2 font-bold text-xl text-slate-700"><Building2 className="text-primary" /> Enterprise</div>
-            <div className="flex items-center gap-2 font-bold text-xl text-slate-700"><ShieldCheck className="text-primary" /> Certified</div>
-            <div className="flex items-center gap-2 font-bold text-xl text-slate-700"><Users className="text-primary" /> Professional</div>
-            <div className="flex items-center gap-2 font-bold text-xl text-slate-700"><Globe className="text-primary" /> Global</div>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                <ShieldCheck size={28} />
+              </div>
+              <div>
+                <h2 className="text-lg font-bold text-slate-900">Verified U.S. Supplier</h2>
+                <p className="text-slate-600">We are a registered supplier on SAM.gov and approved on Pennsylvania Supplier Portal and Jaggaer.</p>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-8 opacity-40 grayscale">
+              <span className="text-xl font-black tracking-tighter text-slate-900">SAM.GOV</span>
+              <span className="text-xl font-bold tracking-tight text-slate-900">PA SUPPLIER</span>
+              <span className="text-xl font-black italic tracking-tighter text-slate-900">JAGGAER</span>
+            </div>
           </div>
         </div>
       </section>
@@ -147,7 +166,7 @@ export default function Home() {
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-primary-foreground/70 font-medium uppercase tracking-widest text-sm">{stat.label}</div>
+                <div className="text-slate-400 font-medium uppercase tracking-widest text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -224,7 +243,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/contact"
-                  className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-secondary transition-all"
+                  className="bg-accent text-primary px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all"
                 >
                   Book a Consultation
                 </Link>

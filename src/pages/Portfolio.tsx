@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
@@ -89,9 +90,9 @@ export default function Portfolio() {
         {/* Bottom CTA */}
         <div className="mt-32 text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-8">Have a similar project in mind?</h2>
-          <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-secondary transition-all shadow-xl shadow-primary/20 flex items-center gap-2 mx-auto">
+          <Link to="/contact" className="bg-accent text-primary px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-xl shadow-accent/20 inline-flex items-center gap-2 mx-auto">
             Let's Discuss Your Project <ArrowRight size={20} />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

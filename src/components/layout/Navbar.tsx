@@ -39,20 +39,23 @@ export default function Navbar() {
             M
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-lg leading-tight tracking-tight">MAPLE</span>
+            <span className={cn(
+              "font-bold text-lg leading-tight tracking-tight transition-colors",
+              scrolled ? "text-slate-900" : "text-white"
+            )}>MAPLE</span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-semibold">Business & IT Solutions</span>
           </div>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-primary',
-                location.pathname === link.href ? 'text-primary' : 'text-slate-600'
+                'text-sm font-semibold transition-all hover:text-accent tracking-wide',
+                location.pathname === link.href ? 'text-accent' : scrolled ? 'text-slate-900' : 'text-white'
               )}
             >
               {link.name}
@@ -60,7 +63,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/contact"
-            className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-secondary transition-all shadow-lg shadow-primary/20"
+            className="bg-accent text-primary px-6 py-3 rounded-full text-sm font-bold hover:brightness-110 transition-all shadow-lg shadow-accent/20"
           >
             Get a Quote
           </Link>

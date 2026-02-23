@@ -21,13 +21,13 @@ export default function Footer() {
             Maple Business & IT Solutions LLC is a premier U.S.-based IT consulting firm specializing in federal, state, and private sector digital transformation.
           </p>
           <div className="flex items-center gap-4">
-            <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors">
+            <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-primary transition-colors">
               <Linkedin size={16} />
             </a>
-            <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors">
+            <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-primary transition-colors">
               <Twitter size={16} />
             </a>
-            <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors">
+            <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-primary transition-colors">
               <Facebook size={16} />
             </a>
           </div>
@@ -37,10 +37,10 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-6">Quick Links</h4>
           <ul className="space-y-4 text-sm">
-            <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-            <li><Link to="/services" className="hover:text-primary transition-colors">Our Services</Link></li>
-            <li><Link to="/portfolio" className="hover:text-primary transition-colors">Case Studies</Link></li>
-            <li><Link to="/blog" className="hover:text-primary transition-colors">Insights & Blog</Link></li>
+            <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors">Our Services</Link></li>
+            <li><Link to="/portfolio" className="hover:text-accent transition-colors">Case Studies</Link></li>
+            <li><Link to="/blog" className="hover:text-accent transition-colors">Insights & Blog</Link></li>
           </ul>
         </div>
 
@@ -48,11 +48,11 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-6">Our Services</h4>
           <ul className="space-y-4 text-sm">
-            <li><Link to="/services" className="hover:text-primary transition-colors">Web Development</Link></li>
-            <li><Link to="/services" className="hover:text-primary transition-colors">Mobile App Development</Link></li>
-            <li><Link to="/services" className="hover:text-primary transition-colors">Data Analytics</Link></li>
-            <li><Link to="/services" className="hover:text-primary transition-colors">Cybersecurity</Link></li>
-            <li><Link to="/services" className="hover:text-primary transition-colors">Cloud Solutions</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors">Web Development</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors">Mobile App Development</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors">Data Analytics</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors">Cybersecurity</Link></li>
+            <li><Link to="/services" className="hover:text-accent transition-colors">Cloud Solutions</Link></li>
           </ul>
         </div>
 
@@ -61,17 +61,17 @@ export default function Footer() {
           <h4 className="text-white font-bold">Contact Us</h4>
           <div className="space-y-4 text-sm">
             <div className="flex gap-3">
-              <Mail className="text-primary shrink-0" size={18} />
+              <Mail className="text-accent shrink-0" size={18} />
               <div className="flex flex-col">
-                <a href="mailto:info@mapleitsol.com" className="hover:text-primary">info@mapleitsol.com</a>
+                <a href="mailto:info@mapleitsol.com" className="hover:text-accent">info@mapleitsol.com</a>
               </div>
             </div>
             <div className="flex gap-3">
-              <Phone className="text-primary shrink-0" size={18} />
-              <a href="tel:+17165342595" className="hover:text-primary">+1 (716) 534-2595</a>
+              <Phone className="text-accent shrink-0" size={18} />
+              <a href="tel:+17165342595" className="hover:text-accent">+1 (716) 534-2595</a>
             </div>
             <div className="flex gap-3">
-              <MapPin className="text-primary shrink-0" size={18} />
+              <MapPin className="text-accent shrink-0" size={18} />
               <p>4408 Waskom Dr, Plano, TX 75024, United States</p>
             </div>
           </div>

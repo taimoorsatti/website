@@ -53,7 +53,7 @@ export default function Contact() {
                   className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all resize-none"
                 ></textarea>
               </div>
-              <button className="w-full bg-primary text-white py-5 rounded-2xl font-bold text-lg hover:bg-secondary transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2">
+              <button className="w-full bg-accent text-primary py-5 rounded-2xl font-bold text-lg hover:brightness-110 transition-all shadow-xl shadow-accent/20 flex items-center justify-center gap-2">
                 Send Message <Send size={20} />
               </button>
             </form>
