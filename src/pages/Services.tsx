@@ -1,6 +1,7 @@
 import React from 'react';
-import { Smartphone, Globe, BarChart3, Cpu, Code, Database, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Smartphone, Globe, BarChart3, Shield, Code, Zap, ArrowRight, CheckCircle2, Cloud, Database, Layout } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'motion/react';
 
 const services = [
   {
@@ -48,7 +49,7 @@ const services = [
   {
     id: 'uiux',
     title: 'UI/UX Design',
-    icon: Cpu,
+    icon: Layout,
     desc: 'Our design philosophy centers on the user. We create intuitive, aesthetically pleasing interfaces that simplify complex tasks and enhance overall user satisfaction across all digital touchpoints.',
     features: [
       'User Research & Personas',
@@ -57,7 +58,7 @@ const services = [
       'Usability Testing',
       'Interaction Design',
     ],
-    image: 'https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=2070',
   },
   {
     id: 'api',
@@ -115,7 +116,7 @@ export default function Services() {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="rounded-[2.5rem] shadow-2xl"
+                    className="rounded-[2.5rem] shadow-2xl w-full object-cover aspect-[4/3]"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-3xl -z-10"></div>

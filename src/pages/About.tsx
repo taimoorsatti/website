@@ -55,49 +55,76 @@ export default function About() {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div className="text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Leadership</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto mb-12">
-            Led by industry veterans with deep expertise in enterprise IT solutions and digital strategy.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
-            {[
-              {
-                name: 'Marcus Chen',
-                role: 'Chief Executive Officer',
-                image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400',
-                bio: '20+ years in enterprise software and strategic consulting.'
-              },
-              {
-                name: 'Sarah Jenkins',
-                role: 'Chief Technology Officer',
-                image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400',
-                bio: 'Expert in AI implementation and cloud architecture.'
-              },
-              {
-                name: 'David Miller',
-                role: 'VP of Operations',
-                image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400',
-                bio: 'Specialist in government contracting and project management.'
-              }
-            ].map((member) => (
-              <div key={member.name} className="group text-left">
-                <div className="aspect-[4/5] bg-slate-100 rounded-3xl mb-6 overflow-hidden relative">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
-                    <p className="text-white text-sm font-light leading-relaxed">{member.bio}</p>
+        {/* Why Choose Us */}
+        <div className="mb-24">
+          <div className="bg-slate-900 text-white rounded-[3rem] p-12 md:p-20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Why Partner With Us?</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Building2 className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">U.S. Based & Registered</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    Registered on SAM.gov and approved on Pennsylvania Supplier Portal and Jaggaer. We understand the complexities of government contracting.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <ShieldCheck className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">Security & Compliance</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    We prioritize data security and maintain strict compliance with NIST, HIPAA, and industry-standard security protocols.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Briefcase className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">Enterprise Expertise</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    Decades of combined experience delivering scalable, high-performance solutions for Fortune 500 companies and public sector agencies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Company Strengths */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">Our Strategic Strengths</h2>
+            <div className="space-y-6">
+              {[
+                { title: 'Agile Methodology', desc: 'Iterative development that ensures transparency, speed, and continuous alignment with your goals.' },
+                { title: 'Scalable Architecture', desc: 'We build systems designed to grow with your organization, handling increased loads without performance loss.' },
+                { title: 'Dedicated Support', desc: 'Our relationship doesn\'t end at deployment. We provide ongoing maintenance and strategic technical support.' },
+                { title: 'Cost-Effective Innovation', desc: 'Leveraging the latest technologies to deliver maximum value and ROI for your technology investments.' },
+              ].map((strength) => (
+                <div key={strength.title} className="flex gap-4">
+                  <div className="mt-1">
+                    <CheckCircle2 className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900">{strength.title}</h4>
+                    <p className="text-slate-600 text-sm mt-1">{strength.desc}</p>
                   </div>
                 </div>
-                <h4 className="font-bold text-xl text-slate-900">{member.name}</h4>
-                <p className="text-primary font-medium text-sm uppercase tracking-widest mt-1">{member.role}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+          <div className="relative">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070"
+              alt="Team Collaboration"
+              className="rounded-[2.5rem] shadow-2xl"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-3xl -z-10"></div>
           </div>
         </div>
       </div>
