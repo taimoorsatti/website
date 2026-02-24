@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Send, Calendar, Clock, Globe } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <div className="pt-32 pb-24">
+    <div className="py-24">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="max-w-3xl mb-20">

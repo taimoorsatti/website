@@ -63,7 +63,7 @@ const industryInsights = [
 
 export default function Blog() {
   return (
-    <div className="pt-32 pb-24 bg-white">
+    <div className="py-24 bg-white">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="max-w-4xl mb-20">

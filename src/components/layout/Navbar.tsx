@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4',
-        scrolled ? 'glass py-3 shadow-sm' : 'bg-transparent'
+        'glass py-3 shadow-sm' // Always glass to ensure black logo/links are visible
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -39,10 +39,9 @@ export default function Navbar() {
             M
           </div>
           <div className="flex flex-col">
-            <span className={cn(
-              "font-bold text-lg leading-tight tracking-tight transition-colors",
-              scrolled ? "text-slate-900" : "text-white"
-            )}>MAPLE</span>
+            <span className="font-bold text-lg leading-tight tracking-tight text-slate-900 transition-colors">
+              MAPLE
+            </span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-semibold">Business & IT Solutions</span>
           </div>
         </Link>
@@ -55,7 +54,7 @@ export default function Navbar() {
               to={link.href}
               className={cn(
                 'text-sm font-semibold transition-all hover:text-primary tracking-wide',
-                location.pathname === link.href ? 'text-primary' : scrolled ? 'text-slate-900' : 'text-white'
+                location.pathname === link.href ? 'text-primary' : 'text-slate-900'
               )}
             >
               {link.name}
