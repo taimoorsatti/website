@@ -26,7 +26,7 @@ export default function About() {
             </p>
           </div>
           <div className="bg-slate-50 p-10 rounded-[2rem]">
-            <div className="w-12 h-12 bg-accent/10 text-accent rounded-xl flex items-center justify-center mb-6">
+            <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
               <Award size={24} />
             </div>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Our Vision</h2>

@@ -141,7 +141,7 @@ export default function Services() {
                 </div>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 text-accent font-bold text-lg hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 text-primary font-bold text-lg hover:gap-3 transition-all"
                 >
                   Request a Quote <ArrowRight size={20} />
                 </Link>
@@ -158,7 +158,7 @@ export default function Services() {
           </p>
           <Link
             to="/contact"
-            className="bg-accent text-primary px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-xl shadow-accent/20"
+            className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-xl shadow-primary/20"
           >
             Schedule a Free Consultation
           </Link>

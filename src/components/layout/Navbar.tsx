@@ -54,8 +54,8 @@ export default function Navbar() {
               key={link.name}
               to={link.href}
               className={cn(
-                'text-sm font-semibold transition-all hover:text-accent tracking-wide',
-                location.pathname === link.href ? 'text-accent' : scrolled ? 'text-slate-900' : 'text-white'
+                'text-sm font-semibold transition-all hover:text-primary tracking-wide',
+                location.pathname === link.href ? 'text-primary' : scrolled ? 'text-slate-900' : 'text-white'
               )}
             >
               {link.name}
@@ -63,7 +63,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/contact"
-            className="bg-accent text-primary px-6 py-3 rounded-full text-sm font-bold hover:brightness-110 transition-all shadow-lg shadow-accent/20"
+            className="bg-primary text-white px-6 py-3 rounded-full text-sm font-bold hover:brightness-110 transition-all shadow-lg shadow-primary/20"
           >
             Get a Quote
           </Link>

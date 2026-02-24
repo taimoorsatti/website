@@ -8,37 +8,37 @@ const services = [
     title: 'Mobile App Development',
     desc: 'Cutting-edge iOS and Android applications built for performance and scale.',
     icon: Smartphone,
-    color: 'bg-secondary',
+    color: 'bg-primary',
   },
   {
     title: 'Web Development',
     desc: 'Enterprise-grade web platforms with modern architectures and seamless UX.',
     icon: Globe,
-    color: 'bg-slate-700',
+    color: 'bg-secondary',
   },
   {
     title: 'Data Analytics',
     desc: 'Transforming raw data into actionable business intelligence and insights.',
     icon: BarChart3,
-    color: 'bg-accent',
+    color: 'bg-primary/80',
   },
   {
     title: 'UI/UX Design',
     desc: 'User-centric design that drives engagement and simplifies complex workflows.',
     icon: Cpu,
-    color: 'bg-primary',
+    color: 'bg-secondary/80',
   },
   {
     title: 'API Integration',
     desc: 'Seamlessly connecting your ecosystem with robust and secure API solutions.',
     icon: Code,
-    color: 'bg-teal-600',
+    color: 'bg-primary/60',
   },
   {
     title: 'Custom Software',
     desc: 'Tailored software solutions designed to solve your unique business challenges.',
     icon: Database,
-    color: 'bg-slate-800',
+    color: 'bg-secondary/60',
   },
 ];
 
@@ -59,38 +59,38 @@ export default function Home() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070"
-            alt="Professional IT Team Working"
-            className="w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070"
+            alt="Software Development Workspace"
+            className="w-full h-full object-cover blur-sm"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/80"></div>
+          <div className="absolute inset-0 bg-slate-950/70 backdrop-blur-[1px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/60 to-slate-950/90"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: "easeOut" }}
             >
-              <h1 className="text-5xl md:text-8xl font-bold text-white leading-[1.05] mb-8 tracking-tight">
-                Premium <span className="text-accent">IT Solutions</span> for Global Enterprises
+              <h1 className="text-4xl md:text-6xl font-bold text-primary leading-tight mb-8 tracking-tight">
+                Premium IT Solutions for <span className="text-white">Global Enterprises</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-200 leading-relaxed mb-12 max-w-2xl font-light tracking-wide">
+              <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-2xl font-light tracking-wide">
                 Maple Business & IT Solutions LLC delivers high-impact software engineering, AI-driven analytics, and strategic consulting to U.S. businesses and government entities.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
                 <Link
                   to="/contact"
-                  className="bg-accent text-primary px-10 py-5 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-2xl shadow-accent/20 flex items-center justify-center gap-2 group"
+                  className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-2xl shadow-primary/20 flex items-center justify-center gap-2 group"
                 >
                   Start Your Project <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
                   to="/services"
-                  className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center"
+                  className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center"
                 >
                   Explore Services
                 </Link>
@@ -185,7 +185,7 @@ export default function Home() {
                   className="rounded-[2rem] shadow-2xl relative z-10"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-accent rounded-3xl -z-0"></div>
+                <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/20 rounded-3xl -z-0"></div>
               </div>
             </div>
             <div className="lg:w-1/2">
