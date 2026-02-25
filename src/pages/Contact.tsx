@@ -20,15 +20,15 @@ export default function Contact() {
           <div className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100">
             <h2 className="text-2xl font-bold text-slate-900 mb-8">Send Us a Message</h2>
             <form 
-              action="https://formspree.io/f/taimooryasin21@gmail.com" 
+              action="https://formsubmit.co/taimooryasin21@gmail.com" 
               method="POST"
               className="space-y-6"
-              onSubmit={(e) => {
-                // For demonstration, we'll show an alert. 
-                // In a real scenario with Formspree, you'd let the form submit or use fetch.
-                console.log("Form submitted to: taimooryasin21@gmail.com");
-              }}
             >
+              {/* FormSubmit Configuration */}
+              <input type="hidden" name="_subject" value="New Contact Form Submission - Maple Solutions" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-slate-700 uppercase tracking-widest">Full Name</label>

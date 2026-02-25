@@ -204,16 +204,27 @@ export default function Blog() {
               <p className="text-white/70 text-sm mb-8 relative z-10">
                 Weekly insights on technology strategy for corporate and government leaders.
               </p>
-              <div className="space-y-4 relative z-10">
+              <form 
+                action="https://formsubmit.co/taimooryasin21@gmail.com" 
+                method="POST"
+                className="space-y-4 relative z-10"
+              >
+                <input type="hidden" name="_subject" value="New Newsletter Subscription - Maple Solutions" />
+                <input type="hidden" name="_captcha" value="false" />
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="Business Email"
                   className="w-full px-6 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/30"
                 />
-                <button className="w-full bg-white text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-[1.02] transition-all">
+                <button 
+                  type="submit"
+                  className="w-full bg-white text-primary py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-[1.02] transition-all"
+                >
                   Subscribe
                 </button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
