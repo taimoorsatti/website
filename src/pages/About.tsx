@@ -7,10 +7,12 @@ export default function About() {
     <div className="pt-32 pb-24">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="max-w-3xl mb-20">
-          <h1 className="text-5xl font-bold text-slate-900 mb-6">About Maple Business & IT Solutions LLC</h1>
+        <div className="max-w-4xl mb-20">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-8 tracking-tight">
+            About <span className="text-primary">Maple Solutions</span>
+          </h1>
           <p className="text-xl text-slate-600 leading-relaxed">
-            Founded on the principles of excellence and integrity, we are a U.S.-based IT consulting firm dedicated to providing high-impact digital solutions for the private sector.
+            Founded on the principles of excellence and integrity, we are a U.S.-based IT consulting firm dedicated to providing high-impact digital solutions for both the private sector and government organizations.
           </p>
         </div>
 

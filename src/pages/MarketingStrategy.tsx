@@ -6,7 +6,9 @@ export default function MarketingStrategy() {
     <div className="pt-32 pb-24">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold text-slate-900 mb-12">Digital Strategy & SEO Guide</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-12 tracking-tight">
+            Digital Strategy & <span className="text-primary">SEO Guide</span>
+          </h1>
           
           {/* SEO Keywords */}
           <section className="mb-20">

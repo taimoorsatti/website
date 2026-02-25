@@ -95,10 +95,12 @@ export default function Services() {
     <div className="pt-32 pb-24">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-24">
-          <h1 className="text-5xl font-bold text-slate-900 mb-6">Our Specialized IT Services</h1>
+        <div className="text-center max-w-4xl mx-auto mb-24">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-8 tracking-tight">
+            Our Specialized <span className="text-primary">IT Services</span>
+          </h1>
           <p className="text-xl text-slate-600">
-            We offer a full spectrum of technology services designed to help private enterprises excel in the digital age.
+            We offer a full spectrum of technology services designed to help private enterprises and government agencies excel in the digital age.
           </p>
         </div>
 
@@ -159,7 +161,7 @@ export default function Services() {
           </p>
           <Link
             to="/contact"
-            className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-xl shadow-primary/20"
+            className="inline-flex items-center justify-center bg-primary text-white px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg hover:brightness-110 transition-all shadow-xl shadow-primary/20 w-full sm:w-auto"
           >
             Schedule a Free Consultation
           </Link>

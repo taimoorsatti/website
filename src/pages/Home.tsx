@@ -243,13 +243,13 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/contact"
-                  className="bg-accent text-primary px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all"
+                  className="bg-accent text-primary px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg hover:brightness-110 transition-all w-full sm:w-auto text-center"
                 >
                   Book a Consultation
                 </Link>
                 <Link
                   to="/portfolio"
-                  className="bg-transparent text-white border border-white/20 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all"
+                  className="bg-transparent text-white border border-white/20 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg hover:bg-white/10 transition-all w-full sm:w-auto text-center"
                 >
                   View Case Studies
                 </Link>
