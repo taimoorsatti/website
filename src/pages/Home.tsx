@@ -42,13 +42,6 @@ const services = [
   },
 ];
 
-const stats = [
-  { label: 'Projects Delivered', value: '250+' },
-  { label: 'Corporate Clients', value: '150+' },
-  { label: 'Client Satisfaction', value: '99%' },
-  { label: 'Years Experience', value: '12+' },
-];
-
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -155,18 +148,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Expertise & Approach Section */}
       <section className="py-24 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-5xl md:text-6xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-slate-400 font-medium uppercase tracking-widest text-sm">{stat.label}</div>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Expertise & Approach</h2>
+            <p className="text-slate-200">We combine technical mastery with strategic thinking to deliver superior results for our clients.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { title: 'Secure & Scalable Solutions', icon: ShieldCheck, desc: 'Built with industry-leading security protocols and designed to grow with your business.' },
+              { title: 'Government & Enterprise Standards', icon: Building2, desc: 'Adhering to strict compliance requirements and enterprise-grade quality benchmarks.' },
+              { title: 'Agile Development Process', icon: Code, desc: 'Iterative approach ensuring transparency, speed, and continuous alignment with goals.' },
+              { title: 'Ongoing Support & Maintenance', icon: Users, desc: 'Dedicated technical partnership beyond deployment for long-term operational success.' },
+            ].map((item) => (
+              <div key={item.title} className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl text-center hover:bg-white/10 transition-all">
+                <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-white mx-auto mb-6">
+                  <item.icon size={28} />
+                </div>
+                <h4 className="text-lg font-bold text-white mb-3">{item.title}</h4>
+                <p className="text-slate-300 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -243,7 +248,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/contact"
-                  className="bg-accent text-primary px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg hover:brightness-110 transition-all w-full sm:w-auto text-center"
+                  className="bg-accent text-slate-950 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg hover:brightness-110 transition-all w-full sm:w-auto text-center"
                 >
                   Book a Consultation
                 </Link>

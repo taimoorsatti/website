@@ -119,13 +119,10 @@ export default function Contact() {
             </div>
 
             <div className="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Book a Meeting</h2>
-              <p className="text-slate-600 mb-8">
-                Prefer a direct conversation? Schedule a 30-minute discovery call with our solutions team.
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">Our Commitment to Excellence</h2>
+              <p className="text-slate-600 mb-0 leading-relaxed">
+                At Maple Business & IT Solutions, we are dedicated to delivering superior technology services that drive real business value. Our team of experts works tirelessly to ensure your organization stays ahead of the curve with secure, scalable, and innovative solutions.
               </p>
-              <button className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-full font-bold hover:bg-slate-100 transition-all flex items-center gap-2">
-                <Calendar size={20} /> Schedule on Calendly
-              </button>
             </div>
           </div>
         </div>
