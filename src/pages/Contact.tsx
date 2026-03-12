@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100">
             <h2 className="text-2xl font-bold text-slate-900 mb-8">Send Us a Message</h2>
             <form 
-              action="https://formsubmit.co/taimooryasin21@gmail.com" 
+              action="https://formsubmit.co/info@mapleitsol.com" 
               method="POST"
               className="space-y-6"
             >
